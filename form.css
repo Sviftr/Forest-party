@@ -20,13 +20,18 @@ a {
 }
 
 header{
-    background-color: rgba(181, 180, 180, 0.217);
-    backdrop-filter: blur(12px);
+    max-width: 100%;
+    z-index: 100;
+    top: 0;
+    backdrop-filter: blur(17px);
+    overflow: hidden;
 }
 
 .header__body {
+    padding-left: 30px;
+    padding-right: 30px;
     margin:0 auto;
-    width: 1100px;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,6 +59,7 @@ header{
 
 .logo__text {
     color: #fff;
+    font-family: 'Tillana', cursive;
 }
 
 /* ---------------HEADER NAV MENY----------- */
@@ -65,22 +71,29 @@ header{
 .header__menu-item a{
     text-decoration: none;
     color: #fff;
-    margin-left: 40px;
+    font-family: 'Tillana', cursive;
+    margin-left: 50px;
     transition: 0.9s;
 }
+
+/* ---------------HEADER END--------------- */
 
 /* FORMULA FORM -- LOGIN */
 
 .div__formula-form {
-    border: 1px solid #ff0000;
     width: 500px;
     height: 550px;
     backdrop-filter: blur(15px);
     margin: 100px auto;
     border-radius: 15px;
-    box-shadow: 0px 0px 25px #ffffffbb;
+    box-shadow: 0px 0px 25px #00ffeafe;
     position: relative;
     padding: 20px;
+    transition: 0.9s;
+}
+
+.div__formula-form:hover {
+    box-shadow: 0px 0px 25px #a026c5;
 }
 
 .fa-dragon {
@@ -100,7 +113,7 @@ header{
     text-align: center;
 }
 
-
+/* EMAIL FORMA */
 .formula__form-Email-box {
     display: flex;
     flex-direction: column;
@@ -120,10 +133,15 @@ header{
 }
 
 .email__lable {
-    width: 62px;
     color: #ff00ee;
     font-family: 'Tillana', cursive;
     font-size: 24px;
+    transition: 0.7s;
+}
+
+.formula__form-Email-box:hover .email__lable {
+    font-size: 35px;
+    text-shadow: 0px 0px 8px #00ffeafe;
 }
 
 .input__email {
@@ -132,5 +150,86 @@ header{
     outline: none;
     font-size: 20px;
     padding: 10px 10px 0 3px;  
+    color: rgb(255, 0, 255);
+}
+
+/* PASWORD FORMA */
+
+.formula__form-Pasword-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.form__pasword-box-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-lock {
+    padding: 10px;
+    font-size: 20px;
+    color: #00ffe5;
+    text-shadow: 0 1px 8px #0000008c;
+}
+
+.pasword__lable {
+    color: #ff00ee;
+    font-family: 'Tillana', cursive;
+    font-size: 24px;
+    transition: 0.7s;
+}
+
+.formula__form-Pasword-box:hover .pasword__lable {
+    font-size: 35px;
+    text-shadow: 0px 0px 8px #00ffeafe;
+}
+
+.input__pasword {
+    background: transparent;
+    border-bottom: 2px solid #00ff1e;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 10px 0 3px;  
+    color: rgb(255, 0, 255);
+}
+
+/* CHEK BOX */
+.div__plus {
+    display: flex;
+    justify-content: space-around;
+}
+
+.chak-box {
+    width: 50px;
+    height: 20px;
+    margin-top: 70px;
+}
+
+.checkbox-span {
+    font-family: 'Tillana', cursive;
+    font-size: 20px;
+    color:  #00ffeafe;
+    margin-left: -15px;
+}
+
+.checkbox-link {
+    margin-top: 70px;
+    font-family: 'Tillana', cursive;
+    font-size: 15px;
+    color:  #00ffeafe;
+    margin-left: 20px;
+    transition: 0.7s;
+}
+
+.checkbox-link:hover {
+    font-size: 19px;
+}
+
+.fa-square-instagram {
+    margin-top: 70px;
+    margin-left: -40px;
+    font-size: 25px;
     color: rgb(255, 0, 255);
 }
