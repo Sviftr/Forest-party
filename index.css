@@ -1,0 +1,358 @@
+body {
+    background: url(./img/wallperens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ---------------HEADER START--------------- */
+
+header{
+    max-width: 100%;
+    z-index: 100;
+    top: 0;
+    backdrop-filter: blur(17px);
+    overflow: hidden;
+}
+
+.header__body {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin:0 auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----------LOGO--------- */
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logo {
+    width: 70px;
+    transition: 2s;
+}
+
+.logo:hover {
+    transform: rotate(1turn);
+    cursor: pointer;
+}
+
+.logo__text {
+    color: #fff;
+    font-family: 'Tillana', cursive;
+}
+
+/* ---------------HEADER NAV MENY----------- */
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu-item a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Tillana', cursive;
+    margin-left: 50px;
+    transition: 0.9s;
+}
+
+/* ---------------HEADER END--------------- */
+
+
+/* ---------------MAIN START--------------- */
+
+/* MUSIC BAR START */
+
+.main__music-bar {
+    position: fixed;
+    left: 0;
+    top: 350px;
+    z-index: 200;
+    border-radius: 0 70px 70px 0;
+    width: 70px;
+    height: 120px;
+    backdrop-filter: blur(30px);
+    background-color: #ffffff16;
+    overflow: hidden;
+    transition: 0.8s;
+    display: flex;
+    align-items: center;
+}
+
+.main__music-bar:hover {
+    width: 420px;
+}
+
+.audio {
+    margin-left: 45px;
+}
+
+.fa-music {
+    color: #ffffff;
+    font-size: 45px;
+    padding-left: 10px;
+}
+
+
+/* MUSIC BAR END */
+
+
+.main {
+    margin: 30px auto;
+    max-width: 1400px;
+    height: 1200px;
+}
+
+.main__body {
+    margin: 0 auto;
+}
+
+/* -------------IMG BOX X3----------- */
+
+.main__body-imgs {
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main__img-1 {
+    max-width: 330px;
+    height: 550px;
+    margin: auto;
+    left: 0px;
+    position: absolute;
+    animation: img-1 2s linear;
+    overflow: hidden;
+    border: 30px solid #00000053;
+    border-radius: 22px;
+}
+
+@keyframes img-1 {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.main__img-2 {
+    height: 696px;
+    text-align: center;
+    left: 360px;
+    z-index: 100;
+    margin-left: 30px;
+    position: absolute;
+    animation: img-2 2s linear;
+    border: 30px solid #00000053;
+    border-radius: 22px;
+}
+
+@keyframes img-2 {
+    0%{
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.main__img-3 {
+    height: 414px;
+    margin: auto;
+    right: 1.5px;
+    position: absolute;
+    animation: img-3 2s linear;
+    border: 30px solid #00000053;
+    border-radius: 22px;
+}
+
+@keyframes img-3 {
+    0%{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* --------------FIRST TEXT BOX /TWO BLOCKS IN/------------ */
+
+.fa-circle-info {
+    font-size: 25px;
+    color: #c4a0f1;
+    text-shadow: 0 1px 8px #0000008c;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.fa-circle-info:hover {
+    color: #00fefe;
+}
+
+.box__info:hover .fa-circle-info {
+    color: #81dad3;
+}
+
+/* -------TEXT BOX 1---------- */
+
+.main__body-box {
+    margin-top: 30px;
+    max-width: 1400px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box__info {
+    cursor: pointer;
+    border-radius: 22px;
+    max-width: 800px;
+    color: #fff;
+    font-family: 'Tillana', cursive;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    background-color: #4eb5ab6d;
+    box-shadow: 0 6px 12px #785b9c6d;
+    transition: 0.7s;
+}
+
+.box__info:hover {
+    background-color: #785b9c6d;
+    box-shadow: 0 6px 12px #4eb5ab6d;
+}
+
+.box__info:nth-child(2) {
+    margin-left: 40px;
+    max-width: 300px;
+}
+
+/* --------------SECOND TEXT BOX /TWO BLOCKS IN/------------ */
+
+.main__body-second-text-box {
+    margin: 0 auto;
+}
+
+/* -------SECOND TEXT BOX ZAGOLOVOK------ */
+
+.second__text-box-zagolovok-1 {
+    color: #fff;
+    font-family: 'Tillana', cursive;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 0 4px 12px #000;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.second__text-box-zagolovok-1:hover {
+    font-size: 49px;
+}
+
+/* -------TEXT BOX IN 1---------- */
+
+.second__text-box-info-1 {
+    margin: 30px auto;
+    max-width: 1257px;
+    border-radius: 22px;
+    box-shadow: 0 6px 12px #000;
+    background-color: #5f5f5f6d;
+    color: #eeeeee;
+    font-family: 'Tillana', cursive;
+    text-align: center;
+    padding: 20px;
+    transition: 0.8s;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+/* ---------------MAIN END--------------- */
+
+
+
+/* ADAPTIV SECTION. ADAPTIV TO HEADER, MAIN */
+
+
+
+/* ------ADAPTIV TO TABLET------ */
+
+@media (max-width: 767px) {
+
+    .main__body-imgs {
+        height: 1850px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__img-1 {
+        position: relative;
+        top: 30px;
+        left: 0px;
+    }
+    
+    .main__img-2 {
+        position: relative;
+        top: 30px;
+        left: -15px;
+    }
+    .main__img-3 {
+        position: relative;
+        top: 20px;
+        left: 0;
+    }
+
+    .main__body-box {
+        flex-direction: column;
+    }
+
+    .box__info:nth-child(2) {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    body {
+        background: url(./img/bacground-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+}
+
+/* ------ADAPTIV TO PHONE------ */
+@media (max-width: 575px) {
+
+}
