@@ -81,7 +81,7 @@ header{
 /* FORMULA FORM -- LOGIN */
 
 .div__formula-form {
-    width: 500px;
+    max-width: 500px;
     height: 550px;
     backdrop-filter: blur(15px);
     margin: 100px auto;
